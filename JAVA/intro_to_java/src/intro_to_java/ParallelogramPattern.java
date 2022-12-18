@@ -2,27 +2,28 @@ package intro_to_java;
 
 import java.util.Scanner;
 
-public class CharacterPattern {
+public class ParallelogramPattern {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
-
 		int i=1;
 		while(i<=n){
-			char p = (char)('A'+i-1);
-			int j=1;
-			while(j<=i){
-				System.out.print(p);
-				p = (char)(p+1);
-				j++;
+			int spaces = 1;
+			while(spaces<=i-1){
+				System.out.print(" ");
+				spaces++;
+			}
+			int stars = 1;
+			while(stars<=n){
+				System.out.print("*");
+				stars++;
 			}
 			System.out.println();
 			i++;
 		}
 		sc.close();
-
 	}
 
 }

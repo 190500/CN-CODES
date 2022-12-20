@@ -9,7 +9,7 @@ public class IncreasingDecreasingSeq {
 		Scanner scan = new Scanner(System.in);
 		int n = scan.nextInt();
 		int[] num = new int[n];
-		int count = 0, temp = 0;
+		int count = 0;
 		for (int i = 0; i < n; i++) {
 			num[i] = scan.nextInt();
 		}

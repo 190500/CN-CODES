@@ -1,24 +1,26 @@
 package intro_to_java;
 
 import java.util.Scanner;
-import java.lang.Math;
 
-public class BinaryToDecimal {
+public class NumberPalindrome {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
-		int number = 0;
-		int i = 0;
-		while(n>0){
-			int dig = n%10;
-			number += dig*((int)Math.pow(2,i));
-			n/=10;
-			++i;
-
+		int temp = n;
+		int rev = 0;
+		while(temp>0){
+			rev = rev*10 + temp%10;
+			temp = temp / 10;
 		}
-		System.out.print(number);
+		if(rev == n){
+			System.out.print(true);
+		}
+		else{
+			System.out.print(false);
+		}
+
 		sc.close();
 
 	}

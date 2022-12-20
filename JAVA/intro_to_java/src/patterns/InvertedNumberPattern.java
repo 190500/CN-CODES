@@ -1,29 +1,27 @@
-package intro_to_java;
+package patterns;
 
 import java.util.Scanner;
 
-public class ParallelogramPattern {
+public class InvertedNumberPattern {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
-		int i=1;
+		int i = 1;
+
 		while(i<=n){
-			int spaces = 1;
-			while(spaces<=i-1){
-				System.out.print(" ");
-				spaces++;
-			}
-			int stars = 1;
-			while(stars<=n){
-				System.out.print("*");
-				stars++;
+			int j = 1;
+			while(j<=n-i+1){
+				System.out.print(n-i+1);
+				j++;
 			}
 			System.out.println();
 			i++;
 		}
+
 		sc.close();
+
 	}
 
 }

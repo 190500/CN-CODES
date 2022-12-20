@@ -1,8 +1,8 @@
-package intro_to_java;
+package patterns;
 
 import java.util.Scanner;
 
-public class TriangleStarPattern {
+public class TraingleNumberPattern {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -11,14 +11,13 @@ public class TriangleStarPattern {
 
 		int i=1;
 		while(i<=n){
-			int j = 1;
+			int j=1;
 			while(j<=i){
-				System.out.print("*");
+				System.out.print(i);
 				j++;
 			}
 			System.out.println();
 			i++;
-			
 		}
 		sc.close();
 

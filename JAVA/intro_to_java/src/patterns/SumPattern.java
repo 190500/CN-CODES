@@ -1,4 +1,4 @@
-package intro_to_java;
+package patterns;
 
 import java.util.*;
 
